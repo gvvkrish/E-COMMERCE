@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Accessories</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(190, 17, 17, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 620px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/knt7zbk0/tripod/tripod/f/6/9/13-inch-flexible-gorillapod-tripod-with-mobile-attachment-for-original-imag2ezmvpfwzfyw.jpeg?q=70" alt="Tripod" style="width: 100%;">
+    <h1>Tygot 13 inch Flexible Gorillapod Tripod</h1>
+    <p class="price">₹ 299</p>
+    <p>Tygot Gorilla Tripod/Mini (13 Inch) Tripod for Mobile Phone with Phone Mount | Flexible Gorilla Stand for DSLR & Action Cameras</p><br>
+    <p><b>DESCRIPTION:</b><br>Heavy Duty: Made of high quality ABS with long life and high durability. Rotating Sphere: Anodised rotating sphere allows angle lock and high load capacity for DSLR and phones. Ideal for tough environments and long use.</p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="Scan QR to Pay"><br>
+      <a href="https://forms.gle/your-google-form" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

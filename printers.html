@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Printers</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 700px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/printer/p/q/g/flow-n7000-snw1-hp-original-imaggwfgnhqthmbt.jpeg?q=70" alt="Canon Printer" style="width: 300px;">
+    <h1>Canon PIXMA MG2470 All-in-One Inkjet Printer (White, Grey, Ink Cartridge)</h1>
+    <p class="price">₹3,499</p>
+    <p>Print without fretting and fumbling with this Canon PIXMA MG2470 All-in-One Inkjet Printer. The lightweight and compact design of this printer is an absolute boon as it makes it easy to store the printer in small spaces.</p><br>
+    <p><b>DESCRIPTION:</b><br><br>
+      Make printing fun and easy with this Canon PIXMA MG2470 All-in-One Inkjet Printer. It is compact as well as lightweight which makes storage in small areas really easy. This printer comes with the "My Image Garden" software which uses photos stored in your PC to create beautiful collages and calendars to provide you with suggestions.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code">
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

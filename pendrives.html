@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pendrives</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 700px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kr2e3680/pendrive/type-a-to-type-c/9/z/s/dual-drive-go-upto-150mb-s-sandisk-original-imag4xq5g7jxk8aw.jpeg?q=70" alt="HP V215B Pen Drive" style="width: 400px;">
+    <h1>HP V215B 32 GB Pen Drive (Multicolor)</h1>
+    <p class="price">₹399</p>
+    <p><b>DESCRIPTION:</b><br><br>
+      Storage available: 31.44 GB. Good speed (5 to 10 MB/s), no heating issues. Compact, lightweight, and easy to carry.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code">
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

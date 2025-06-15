@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laptop Accessories</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 620px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/312/312/kpk3csw0/keyboard/desktop-keyboard/n/2/u/judwaa-750-zebronics-original-imag3rubg55fvgz6.jpeg?q=70" alt="Keyboard Mouse Combo" style="width: 100%;">
+    <h1>ZEBRONICS Zeb-Judwaa 750 & Mouse Combo Wired USB Desktop Keyboard (Black)</h1>
+    <p class="price">₹399</p>
+    <p><b>DESCRIPTION:</b><br>
+      With a great combination of Keyboard and Touchpad for easy navigation, Flipkart SmartBuy KG3618 Wireless Keyboard is a smart pick. Enjoy wireless freedom with 2.4 GHz operating speed and a wireless range of up to 10m for responsive & uninterrupted connectivity. It is compact, super light and allows you to carry anywhere with ease. Experience never-before seamless user experience with 8 dedicated Hot keys for volume control & faster file operations.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code to Pay">
+      <a href="https://forms.gle/your-google-form" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

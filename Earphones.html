@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earphones</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(190, 17, 17, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 620px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/l0sgyvk0/headphone/f/2/o/buds-z2-oneplus-original-imagcg5ghj3ptrpg.jpeg?q=70" alt="Earphones" style="width: 100%;">
+    <h1>One Plus Bullet Z2</h1>
+    <p class="price">₹ 99</p>
+    <p>OnePlus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 mm Drivers, 10 Mins Charge - 20 Hrs Music, 30 Hrs Battery Life (Magico Black)</p><br>
+    <p><b>DESCRIPTION:</b><br>
+      A quick 10-minute charge delivers up to 20 hours of immersive audio playback<br>
+      The flagship-level battery life delivers up to 30 hours of non-stop music on a single charge<br>
+      A large 12.4 mm bass driver delivers uncompromisingly deep bass for powerful beats. Experience incredibly rich audio detail at every frequency with the titanium coating dome.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code to Pay">
+      <a href="https://forms.gle/your-google-form" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

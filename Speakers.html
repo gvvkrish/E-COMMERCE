@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portonics Bass Speaker</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card {
+      background: #ffffff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .card img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .details p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .details button, .details a button {
+      border: none;
+      outline: none;
+      padding: 12px;
+      margin-top: 15px;
+      color: white;
+      background-color: #000;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+
+    .details button:hover {
+      background-color: #333;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    #payment-section img {
+      width: 260px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #payment-section h3 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/l0h1g280/speaker/mobile-tablet-speaker/z/a/u/por-1578-portronics-original-imagc97tf7pfxxsv.jpeg?q=70" alt="Portonics Speaker">
+
+    <div class="details">
+      <h1>Portonics Bass Speaker</h1>
+      <p class="price">₹499</p>
+      <p><strong>Portronics SoundDrum 1</strong> 10W Bluetooth Speaker (Black, Mono Channel)</p>
+      <p><b>DESCRIPTION:</b><br>
+        10W Bass Output | TWS Support | In-built FM | 2000mAh Battery | 8–10 Hours Playback | Portable & Compact
+      </p>
+
+      <button onclick="showPayment()">BUY NOW</button>
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+
+      <div id="payment-section">
+        <h3>Scan & Pay using UPI</h3>
+        <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code">
+        <br>
+        <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

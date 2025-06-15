@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectors</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 700px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70" alt="Projector" style="width: 300px;">
+    <h1>PLAY Portable 1080P High Definition WIFI Projector</h1>
+    <p class="price">₹11,199</p>
+    <p>PLAY Portable 1080P High Definition WIFI Projector High Brightness (3000 lm / Remote Controller) Portable Projector (White)</p><br>
+    <p><b>DESCRIPTION:</b><br><br>
+      This projector is easy to use in a variety of occasions, it can play anything you want, all the effects are very good.<br>
+      Colour: White<br>
+      Brand: PLAY<br>
+      Keystone: 10° correction<br>
+      Brightness: 2700 Lumens<br>
+      Picture size: 35-120 inch<br>
+      Resolution: Supports 1920 x 1080 (native 800x480)<br>
+      Ports: HDMI, USB, AV, VGA, SD<br>
+      Speaker: Built-in<br>
+      Lamp Life: 50,000 hours<br>
+      Zoom: Electric zoom by remote<br>
+      Noise: < 25 dB<br>
+      Weight: 1 kg
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code">
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

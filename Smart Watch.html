@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart WATCH</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(190, 17, 17, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 700px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/312/312/kwpam4w0/smartwatch/m/f/6/-original-imag9bm4kzqh9yfb.jpeg?q=70" alt="Smart Watch" style="width: 400px; float: left;">
+    <h1>Fire Bolt BT calling watch</h1>
+    <p class="price">₹1,499</p>
+    <p>Fire-Boltt Ninja 3 Smartwatch Full Touch 1.69" & 60 Sports Modes with IP68, SpO2 Tracking, Over 100 Cloud-based watch faces - Black</p><br>
+    <p><b>DESCRIPTION:</b><br>
+    Fire-Boltt is India’s No. 1 Wearable Watch Brand (Q1 2022, IDC).<br>
+    【1.69” HD Full Touch Display】 – Smooth swipes and clear vision.<br>
+    【SpO2 & Heart Rate Monitor】 – Real-time 24x7 oxygen and heart monitoring.<br>
+    Note: For medical use (e.g., COVID), consult a certified device prescribed by a doctor.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="QR Code">
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

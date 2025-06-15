@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bluetooth headphones</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(190, 17, 17, 0.2);
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+      float: left;
+      width: 420px;
+      padding: 10px;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 35px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #payment-section img {
+      width: 300px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/ksw4ccw0/headphone/w/e/y/rockerz-255-pro-fast-charging-rockerz-255f-pro-boat-original-imag6cvfc9g2zqbw.jpeg?q=70" alt="Boat Rockerz" style="width: 100%;">
+    <h1>Boat Rockerz Bluetooth Headphones</h1>
+    <p class="price">₹ 899</p>
+    <p>boAt Rockerz 255 Pro+ in-Ear Bluetooth Neckband with Upto 40 Hours Playback, ASAP Charge, IPX7, Dual Pairing, BT v5.0, with Mic (Navy Blue)</p><br>
+    <p><b>DESCRIPTION:</b><br>Playback- Leave all charging worries at bay as the Rockerz 255 Pro+ comes with a humongous battery backup of upto 40 hours (@50% volume).
+      ASAP Charge- 10 mins charge = 10 hrs audio. Charging time: 1.5 hours. 300 mAh battery.
+      Signature sound with 10mm drivers. IPX7 rated, ideal for workouts and outdoors.
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <button onclick="showPayment()">BUY NOW</button>
+    </p>
+
+    <p style="width: 100%; text-align: center;">
+      <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+    </p>
+
+    <div id="payment-section">
+      <h3>Scan & Pay using UPI</h3>
+      <img src="D:\ECOMP\WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="Scan QR to Pay"><br>
+      <a href="https://forms.gle/your-google-form" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

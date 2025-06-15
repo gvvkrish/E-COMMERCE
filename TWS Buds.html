@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TWS Buds</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      max-width: 850px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    button {
+      border: none;
+      padding: 14px;
+      color: white;
+      background-color: #000;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    #payment-section img {
+      width: 260px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/headphone/9/j/c/phantom-550-wings-original-imaggvzvebfyu5sq.jpeg?q=70" alt="TWS Buds">
+    
+    <h1>TWS Buds</h1>
+    <p class="price">₹12,999</p>
+    <p><strong>OPPO Enco Buds</strong> Bluetooth True Wireless in Ear Earbuds (TWS) with Mic, 24H Battery Life, Supports Dolby Atmos, Noise Cancellation During Calls, IP54 Dust & Water Resistant (Blue)</p>
+    
+    <p><b>DESCRIPTION:</b><br>
+      Battery Beast With 24 Hours Music On: 6H single-charge | 24H with Charging Case<br>
+      Concert-like Experience With Great Bass: Equipped with TPU+PEEK dual diaphragm<br>
+      Clear Calls: Supports Intelligent Call Noise Cancellation<br>
+      Quick Pair & Stable Connection: Bluetooth 5.2+ with Antenna Optimization<br>
+      80ms Low-Latency Game Mode: Perfect audio-video sync during gaming
+    </p>
+
+    <button onclick="showPayment()">BUY NOW</button>
+    <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+
+    <div id="payment-section">
+      <h3>Scan & Pay Using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="UPI QR Code">
+      <br>
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>

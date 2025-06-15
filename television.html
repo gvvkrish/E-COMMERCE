@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TELEVISION</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .price {
+      color: rgb(224, 22, 22);
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    button {
+      border: none;
+      padding: 14px;
+      color: white;
+      background-color: #000;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    #payment-section {
+      display: none;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    #payment-section img {
+      width: 280px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #payment-section a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #payment-section a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="4K Television">
+    
+    <h1>4K Televisions</h1>
+    <p class="price">₹10,999</p>
+    <p><strong>Acer 109 cm (43 inches) I Series 4K Ultra HD Android Smart LED TV</strong> AR43AR2851UDFL (Black)</p>
+    <p><b>DESCRIPTION:</b><br>
+    Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 60Hz | 178° Wide Viewing Angle<br>
+    Connectivity: Dual band Wi-Fi, 2-way Bluetooth<br>
+    HDMI Ports: 3 (one with eARC), USB Ports: 2 (USB 2.0 + USB 3.0)<br>
+    Sound: 30W Output | Dolby Audio | 5 Sound Modes: Movie, Music, Standard, News, Sports
+    </p>
+
+    <button onclick="showPayment()">BUY NOW</button>
+    <a href="D:/ECOMP/ecommerce.html"><button>Home</button></a>
+
+    <div id="payment-section">
+      <h3>Scan & Pay Using UPI</h3>
+      <img src="D:/ECOMP/WhatsApp Image 2025-06-15 at 15.56.26_91e3fd39.jpg" alt="UPI QR Code">
+      <br>
+      <a href="https://forms.gle/your-google-form-link" target="_blank">Submit Payment Details</a>
+    </div>
+  </div>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment-section").style.display = "block";
+    }
+  </script>
+</body>
+</html>
